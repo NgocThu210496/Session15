@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai tap 3</title>
+
+</head>
+
+<body>
+    <script>
+        //bai3.Xây dựng đối tượng chứa tiền lương của các nhân viên trong phòng.
+        // Viết hàm tính tổng lương của các nhân viên trong phòng
+
+        const phongNhanVien = { //khai bao object cha
+        //  nhanVien1:{ //object con1
+        //     name:"Nguyen Thu", //doi tuong
+        //     salary:3000, //doi tuong
+
+        // },
+        // nhanVien2:{ //object con2
+        //     name:"Nguyen B",
+        //     salary: 1000 
+        // }
+
+        "Nguyen Thu":3000,
+        "Nguyen B" :1000
+        
+    }
+    
+
+    function tongLuong(object){
+        // for in duyet cac phan tu trong object or array
+        let sum=0;
+        for (let i in object){
+            sum+=object[i];
+            
+        } console.log(sum);
+        
+
+    }tongLuong(phongNhanVien);
+    
+    </script>
+</body>
+
+</html>

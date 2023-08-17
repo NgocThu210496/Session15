@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai tap 4</title>
+
+</head>
+
+<body>
+    <script>
+        //bai4. Tạo đối tượng menu gồm các thuộc tính width, height và title.
+        // Xây dựng hàm nhân 2 giá trị các thuộc tính có giá trị là number
+
+       let  menu = {
+       //key : value
+        width: 10, 
+        height: 10, 
+        title: "hello"
+    }
+    function multiplicationPropertie(object){
+        //su dung for in duyet cac phan tu trong object or array
+        for(let i in object){ 
+            // dung typeOf de kiem tra kieu du lieu
+            if(typeof object[i]=="number"){
+               // object[i]=object[i]*2;
+               object[i]*=2;
+            }
+        }
+        return object;
+    }
+    console.log("menu ban dau la: ", menu);
+    menu= multiplicationPropertie(menu);
+    console.log("Menu sau khi x2 la: " ,menu);
+        
+    </script>
+</body>
+
+</html>

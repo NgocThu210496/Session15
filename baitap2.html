@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai tap 2</title>
+
+</head>
+
+<body>
+    <script>
+        //bai2.Viết hàm checkEmpty kiểm tra đối tượng có thuộc tính không? Có thì trả về true, 
+        //ngược lại trả về false
+
+        function checkEmpty(myObject){
+            let keylength=Object.keys(myObject).length ; //tra ve mang cac  thuoc tinh cua myObject
+            if(keylength==0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log("Thuoc tinh cua doi tuong la: " + checkEmpty({a:1}));
+
+        
+    </script>
+</body>
+
+</html>

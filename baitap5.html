@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai tap 5</title>
+
+</head>
+
+<body>
+    <script>
+        //bai5.Tạo đối tượng máy tính gồm 3 phương thức
+
+        const calculator = {
+            constructor(){
+                this.a=0;
+                this.b=0;
+            },
+            //a. Read(): nhận hai giá trị và lưu chúng dưới dạng thuộc tính đối tượng
+ //khai bao khoi tao gia tri thuoc tinh cua doi tuong
+            read: function (a, b) {
+                this.a = a;
+                this.b = b;
+            },
+            //b. Sum(): trả về tổng giá trị đã lưu
+            //hanh vi cua doi tuong: methoad
+            sum: function () {
+                let ketQua =this.a + this.b;
+                
+                console.log(this.a + "+" + this.b + "=" + ketQua);
+                return ketQua;
+            },
+            //c. Mul(): trả về tích các giá trị đã lưu
+            //hanh vi cua doi tuong: methoad
+            mul: function () {
+                let ketQua =this.a * this.b;
+                console.log(this.a + "*" + this.b + "=" + ketQua);
+                return this.a * this.b;
+            }
+
+        }
+        //const cal = new computer();
+        calculator.read(3, 5);
+        calculator.sum();
+        calculator.mul();
+        console.log(calculator);
+
+    </script>
+</body>
+
+</html>
